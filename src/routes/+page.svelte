@@ -6,9 +6,11 @@
 <Header />
 
 <main>
+  <div class = "columns">
+  <div class = "text">
   <h2>Lorem Ipsum with Flavour</h2>
-
   <p>What's Ipsum Bro is a lorem ipsum generator with a twist. Instead of the same old boring lorem ipsum, you can choose from a variety of flavours to spice up your placeholder text.</p>
+  </div>
  <div class = "boxes">
   <a href="pirate">
     <img class = "box" src="pirate.png" alt="Pirate" />
@@ -29,6 +31,7 @@
     <img class = "box" src="hipster.png" alt="Hipster" />
   </a>
   </div>
+</div>
 </main>
 
 <Footer />
@@ -38,8 +41,39 @@
   width: 125px;
   height: 125px;
   border-radius: 5%;
-  padding: 2%;
+  padding: 25px;
   background: ivory;
   box-shadow: 15px 15px rgb(195, 226, 236);
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  width: 400px;
+}
+.text {
+  font-family: 'Indie Flower', cursive;
+  width: 30%;
+}
+h2{
+  text-align: center;
+}
+.columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: lavender;
+  padding: 5rem 10rem;
+}
+@media screen and (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+    padding: 2rem 3rem;
+  }
+    
+  .text {
+    width: 100%;
+  }
 }
 </style>
