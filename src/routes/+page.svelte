@@ -47,6 +47,8 @@
   padding: 25px;
   background: ivory;
   box-shadow: 15px 15px rgb(195, 226, 236);
+  transform: scale(1, 1);
+  transition: 0.25s;
 }
 .boxes {
   display: flex;
@@ -88,5 +90,15 @@ main {
   mask: var(--mask);
   background: lavender;
   height: 70px;
+  transform: scale(1, 1);
+  transition: 0.5s;
+}
+.box:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+.wave:hover {
+  transform: scale(1.1, 1.5);
+  transition: 0.5s;
 }
 </style>
