@@ -9,7 +9,7 @@
   h1{
     font-family:'Indie Flower';
     font-weight: bold;
-    margin-top: 100px;
+    padding-top: 100px;
     margin-bottom: 0;
   }
   
