@@ -36,6 +36,11 @@
     background-image: url("Black-Flag.png");
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family: "hyper-scrypt";
+    color: #d9edff;
+  }
+  h2{
+    font-size: 400%;
   }
   .background{
     background-color: rgba(255, 255, 255, 0.5);
@@ -49,10 +54,10 @@
     background-color: rgba(255, 255, 255);
     transition: 0.25s;
   }
-  h2 {
-    font-family: "hyper-scrypt";
-    color: #d9edff;
-    font-size: 400%;
+
+  .subheader:hover{
+    color: #880808;
+    transition: 0.25s;
   }
   p{
     font-family: 'basteleur';
@@ -66,8 +71,16 @@
   }
   .ship{
     background-image: url('/ship.gif');
-    background-position: bottom;
+    background-position: left;
     background-repeat: no-repeat;
     padding-bottom: 12%;
+    transition: 4s;
+  }
+  .ship:hover{
+    background-image: url('/ship.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-bottom: 12%;
+    transition: 4s;
   }
 </style>
