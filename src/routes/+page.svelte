@@ -47,7 +47,7 @@
   padding: 25px;
   background: ivory;
   box-shadow: 15px 15px rgb(195, 226, 236);
-  transform: scale(1, 1);
+    transform: scale(1, 1);
   transition: 0.25s;
 }
 .boxes {
