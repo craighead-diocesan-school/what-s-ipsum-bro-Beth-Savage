@@ -3,7 +3,7 @@
 <style>
   /* Add your own fonts and global styles here. */
   @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
   /* The code below resets the browser's default styles. It's a good idea to include this in your layout component. */
   :global(body) {
     margin: 0;
