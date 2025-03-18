@@ -6,6 +6,9 @@
       <a href="cupcake">Cupcake</a>
       <a href="hipster">Hipster</a>
     </nav>
+    <div class ="cupcake">
+      <img src="scroll-cupcake.png" alt="Cupcake" />
+    </div>
   </div>
   <div class="background">
     <div class="header">
@@ -96,6 +99,49 @@
       cake cake jelly candy jujubes gummi bears jelly-o. Oat cake wafer chocolate
       bar sweet roll macaroon soufflé powder sugar plum tart.
      </p>  
+     <p>
+      Halvah liquorice apple pie jelly beans chupa chups candy icing tiramisu.
+      Tart jelly jujubes gingerbread croissant biscuit. Chupa chups tart
+      cheesecake lemon drops dragée chocolate bar dessert. Ice cream ice cream
+      sugar plum jujubes dragée topping tiramisu croissant chocolate.
+     </p>
+
+     <p>
+      Jujubes tiramisu gingerbread cake donut chocolate bar tart marzipan pastry.
+      Gingerbread jelly tootsie roll muffin bear claw muffin. Jelly-o fruitcake
+      chocolate bar chupa chups chocolate sesame snaps candy. Sweet roll carrot
+      cake cake jelly candy jujubes gummi bears jelly-o. Oat cake wafer chocolate
+      bar sweet roll macaroon soufflé powder sugar plum tart.
+     </p>   
+     <p>
+      Halvah liquorice apple pie jelly beans chupa chups candy icing tiramisu.
+      Tart jelly jujubes gingerbread croissant biscuit. Chupa chups tart
+      cheesecake lemon drops dragée chocolate bar dessert. Ice cream ice cream
+      sugar plum jujubes dragée topping tiramisu croissant chocolate.
+     </p>
+
+     <p>
+      Jujubes tiramisu gingerbread cake donut chocolate bar tart marzipan pastry.
+      Gingerbread jelly tootsie roll muffin bear claw muffin. Jelly-o fruitcake
+      chocolate bar chupa chups chocolate sesame snaps candy. Sweet roll carrot
+      cake cake jelly candy jujubes gummi bears jelly-o. Oat cake wafer chocolate
+      bar sweet roll macaroon soufflé powder sugar plum tart.
+     </p> 
+     <p>
+      Halvah liquorice apple pie jelly beans chupa chups candy icing tiramisu.
+      Tart jelly jujubes gingerbread croissant biscuit. Chupa chups tart
+      cheesecake lemon drops dragée chocolate bar dessert. Ice cream ice cream
+      sugar plum jujubes dragée topping tiramisu croissant chocolate.
+     </p>
+
+     <p>
+      Jujubes tiramisu gingerbread cake donut chocolate bar tart marzipan pastry.
+      Gingerbread jelly tootsie roll muffin bear claw muffin. Jelly-o fruitcake
+      chocolate bar chupa chups chocolate sesame snaps candy. Sweet roll carrot
+      cake cake jelly candy jujubes gummi bears jelly-o. Oat cake wafer chocolate
+      bar sweet roll macaroon soufflé powder sugar plum tart.
+     </p> 
+     
    </div>
   </div>
 </main>
@@ -106,12 +152,13 @@
     grid-area: b;
     display: grid;
     grid: " .    h    .  " 10vh
-          " .    p    .  " 190vh
+          " .    p    .  " 290vh
           / 1fr  5fr  1fr;
   }
   .nav{
     background-color: #F5E392;
     grid-area: n;
+    align-items: center;
   }
   nav a{
     display: flex;
@@ -124,6 +171,7 @@
   main{
     display: grid;
     grid: " b    b    n  " 100vh
+          " b    b    n  " 100vh
           " b    b    n  " 100vh
           / 1fr  5fr  1fr;
   }
@@ -146,5 +194,15 @@
   .header{
     grid-area: h;
     margin-top: 5%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .cupcake{
+    position: fixed;
+    bottom:0;
+    right:0;
+    width:13%;
   }
 </style>
