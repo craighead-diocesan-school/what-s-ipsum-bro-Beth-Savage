@@ -1,3 +1,9 @@
+<script>
+	let y
+	let height
+	$: scrollPercentage = y / (1500 - height)
+</script>
+<svelte:window bind:scrollY={y} bind:innerHeight={height}/>
 <main>
   <div class = "nav">
     <nav>
@@ -7,7 +13,35 @@
       <a href="hipster">Hipster</a>
     </nav>
     <div class ="cupcake">
-      <img src="scroll-cupcake.png" alt="Cupcake" />
+      <img src="scroll-cupcake.png" alt="Cupcake" /> 
+      {#if scrollPercentage > 0.1 }
+      <div class="sprinkle first"></div>
+      {/if}
+      {#if scrollPercentage > 0.2 }
+      <div class="sprinkle second"></div>
+      {/if}
+      {#if scrollPercentage >  0.3}
+      <div class="sprinkle third"></div>
+      {/if}
+      {#if scrollPercentage >  0.4}
+      <div class="sprinkle forth"></div>
+      {/if}
+      {#if scrollPercentage >  0.5}
+      <div class="sprinkle fifth"></div>
+      {/if}
+      {#if scrollPercentage >  0.6}
+      <div class="sprinkle sixth"></div>
+      {/if}
+      {#if scrollPercentage >  0.7}
+      <div class="sprinkle seventh"></div>
+      {/if}
+      {#if scrollPercentage >  0.8}
+      <div class="sprinkle eighth"></div>
+      {/if}
+      {#if scrollPercentage >  0.9}
+      <div class="sprinkle ninth"></div>
+      {/if}
+
     </div>
   </div>
   <div class="background">
@@ -146,6 +180,59 @@
   </div>
 </main>
 <style>
+   .sprinkle {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  .first {
+    background-color: yellow;
+    bottom: 12vh;
+    right: 5vw;
+  }
+  .second {
+    background-color: greenyellow;
+    bottom: 11vh;
+    right: 7.7vw;
+  }
+  .third {
+    background-color: red;
+    bottom: 11.5vh;
+    right: 10vw;
+  }
+  .forth{
+    background-color: blue;
+    bottom: 14vh;
+    right: 6vw;
+  }
+  .fifth{
+    background-color: yellow;
+    bottom: 14vh;
+    right: 9vw;
+  }
+  .sixth{
+    background-color: greenyellow;
+    bottom: 15vh;
+    right: 3vw;
+  }
+  .seventh{
+    background-color: red;
+    bottom: 17vh;
+    right: 4.5vw;
+  }
+  .eighth{
+    background-color: blue;
+    bottom: 17.5vh;
+    right: 7.7vw;
+  }
+  .ninth{
+    background-color: yellow;
+    bottom: 21vh;
+    right: 6vw;
+  }
+
   .background{
     background-color: #F7BDB0; 
     align-items: center;
