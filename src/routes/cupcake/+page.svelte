@@ -7,6 +7,7 @@
 <main>
   <div class = "nav">
     <nav>
+      <a href="/">Home</a>
       <a href="pirate">Pirate</a>
       <a href="cheese">Cheese</a>
       <a href="cupcake">Cupcake</a>
@@ -180,7 +181,7 @@
   </div>
 </main>
 <style>
-   .sprinkle {
+  .sprinkle {
     position: fixed;
     width: 5px;
     height: 5px;
@@ -232,7 +233,6 @@
     bottom: 21vh;
     right: 6vw;
   }
-
   .background{
     background-color: #F7BDB0; 
     align-items: center;
