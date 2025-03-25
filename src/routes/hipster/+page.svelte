@@ -1,7 +1,15 @@
 <main>
-  <div class="background">
+  <header>
     <h2>You Probably Haven't Heard of Hipster Ipsum</h2>
-
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="pirate">Pirate</a>
+    <a href="cheese">Cheese</a>
+    <a href="cupcake">Cupcake</a>
+    <a href="hipster">Hipster</a>
+  </nav>
+  <article>
     <p>
       Fingerstache tofu pickled vibecession kitsch lyft blackbird spyplane vegan
       craft beer keytar banh mi thundercats. Hashtag heirloom vape scenester
@@ -9,7 +17,6 @@
       truck kale chips pabst, bitters raw denim artisan waistcoat seitan
       freegan.
     </p>
-
     <p>
       Put a bird on it vibecession fashion axe YOLO asymmetrical. VHS photo
       booth listicle fam truffaut subway tile yr cred chicharrones semiotics
@@ -17,14 +24,15 @@
       tattooed street art. Prism jean shorts pickled vegan. Vegan praxis cronut
       kitsch pop-up. Letterpress street art mlkshk marxism.
     </p>
-  </div>
+  </article>
 </main>
+
 <style>
-  .background{
-   background-image: url('/Cafe-background.png');
-   background-repeat: no-repeat;
-   background-size:100% auto;
-   height: 200vh;
-   width: 100vw;
+  main {
+    background-image: url("/Cafe-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 220vh;
+    width: 100vw;
   }
 </style>
