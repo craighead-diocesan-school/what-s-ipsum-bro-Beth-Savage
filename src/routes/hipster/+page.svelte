@@ -33,6 +33,67 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 220vh;
-    width: 100vw;
+    width: 99vw;
+    display: grid;
+    grid:
+      " .    .    n  " 50vh
+      " h    h    .  " 50vh
+      " .    a    .  " 120vh
+      / 2fr 3fr 3fr;
+  }
+  header {
+    grid-area: h;
+    rotate: -22.5deg;
+    margin-top: 23%;
+    margin-left: 10%;
+    opacity: 5%;
+    transition: 0.5s;
+  }
+  header:hover {
+    opacity: 100%;
+    transition: 0.5s;
+  }
+  nav {
+    grid-area: n;
+    margin-top: 30%;
+    margin-left: 13%;
+    opacity: 5%;
+    transition: 0.5s;
+  }
+  nav:hover {
+    opacity: 100%;
+    transition: 0.5s;
+  }
+  article {
+    grid-area: a;
+    margin-top: 60%;
+    margin-left: 20%;
+    margin-right: 10%;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    opacity: 5%;
+    font-size: 0.8rem;
+    transition: 0.5s;
+    padding-top: 20%;
+  }
+  article:hover {
+    opacity: 100%;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    margin-left: 10%;
+    margin-right: 0%;
+  }
+  h2 {
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  a {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    margin: 2%;
+    font-size: 1.2rem;
   }
 </style>
